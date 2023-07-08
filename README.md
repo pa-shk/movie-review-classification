@@ -1,9 +1,11 @@
  # Movie reviews classification app
 Stages of work on this project
 
-1) To begin with, I’ve conducted a basic EDA, finding insights about labels distribution and length of reviews<br/>
-![img_1.png](img_1.png "Number of reviews with different rating scores (train and test data)")<br/><br/>
-![img.png](img_2.png "Length of reviews")
+1) To begin with, I’ve conducted a basic EDA, finding insights about labels distribution and length of reviews<br/><br/>
+Number of reviews with different rating scores:
+![img.png](img_1.png)<br/><br/>
+ Length of reviews:<br/>
+![img.png](img_2.png)<br/><br/>
 2) I’ve implemented several models:
     * Logistic regression with feature extraction via bag-of-words vectorization
     * Fasttext model
