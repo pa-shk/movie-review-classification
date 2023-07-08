@@ -14,5 +14,6 @@ def home(request):
 def user(request):
     review = request.GET['review']
     rating = RATING_PREDICTOR.predict([review])[0]
-    sentiment = BINARY_CLASSIFIER.predict([review])[0]
+    sentiment_code = BINARY_CLASSIFIER.predict([review])[0]
+    sentiment =  'postive' if sentiment_code == 0 else 'negative'
     return render(request, 'response.html', {'sentiment': sentiment, 'score': rating})
